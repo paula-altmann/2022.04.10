@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title>Developer's portfolio</title>
+  </head>
+  <body>
+
+    <!-- colors: #188754 #212429 #F6F7F9 photo: #040404 -->
+    <main class="container-fluid text-light" style="background-color: #040404;">
+      <div class="row">
+        <!-- photo -->
+        <div class="col-4 vh-100 top-50 position-relative" style="background: url(./myphoto.jpg) center/cover no-repeat">
+          <div class="position-relative top-50">
+            <h1 class="display-5 text-center mt-5 pt-5 fw-bold">Janusz Cebula</h1>
+            <h6 class="font-monospace fs-5 text-center">front-end developer</h6>
+            <ul class="list-unstyled d-flex justify-content-evenly mt-5 pt-5">
+              <li><a href="facebook.com"><i class="bi bi-facebook fs-4 text-light"></i></a></li>
+              <li><a href="github.com"><i class="bi bi-github fs-4 text-light"></i></a></li>
+              <li><a href="linkedin.pl"><i class="bi bi-linkedin fs-4 text-light"></i></a></li>
+              <li><a href="#"><i class="bi bi-globe fs-4 text-light"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- text -->
+        <div class="col-8">
+
+          <!-- about me -->
+          <h2 class="font-monospace mt-4">about me</h2>
+          <div class="d-flex text-success mt-3 justify-content-around">
+            <p class="">Experience / 10+ </p>
+            <p class="">Location / Gdańsk </p>
+            <p class="">Domain / Freelancer </p>
+            <button class="btn btn-success btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#cv" aria-controls="offcanvasRight">CV</button>
+          </div>
+          <p class="mt-2 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique maiores veritatis voluptatibus facilis? Aliquam quos rem consequuntur voluptate. Quibusdam ab dolore doloribus laudantium vero ducimus atque modi inventore eius quis, dolor perferendis minus! Quis amet eligendi nobis, eius blanditiis quo!</p>
+
+          <!-- canvas CV -->
+          <div class="offcanvas offcanvas-end bg-dark text-light w-75" tabindex="-1" id="cv" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel" class="text-success">Resume</h5>
+              <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <h2 class="display-5">Janusz Cebula</h2>
+              <h4 class="display-5 text-secondary">front-end developer</h4>
+              <div class="card bg-transparent mt-3">
+                <h4 class="font-monospace">About me</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iure cumque laboriosam ipsa consectetur, alias nisi itaque, quod vero consequuntur tempore? Fugit dolores iure molestiae earum deserunt adipisci! Fuga nam consectetur enim distinctio illum hic voluptate, dolores at corrupti delectus facilis. Qui eligendi, sunt deserunt temporibus ab magnam harum, cupiditate et quisquam explicabo deleniti quae esse itaque ex enim accusamus atque? </p>
+                </div>
+                <div class="card bg-transparent mt-3">
+                  <h4 class="font-monospace">Career objective</h4>
+                  <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iure cumque laboriosam ipsa consectetur, alias nisi itaque, quod vero consequuntur tempore? Fugit dolores iure molestiae earum deserunt adipisci! Fuga nam consectetur enim distinctio illum hic voluptate, dolores at corrupti delectus facilis. Qui eligendi, sunt deserunt temporibus ab magnam harum, cupiditate et quisquam explicabo deleniti quae esse itaque ex enim accusamus atque? </p>
+                </div>
+                <div class="card bg-transparent mt-3">
+                  <h4 class="font-monospace fs-1">Skills <span class="fs-5">(and still growing)</span></h4>
+                  <div class="mt-3">
+                    <p class="text-secondary">HTML</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success text-dark fw-bold" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <p class="text-secondary">CSS</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success text-dark fw-bold" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%">85%</div>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <p class="text-secondary">Bootstrap</p>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success text-dark fw-bold" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- services -->
+          <h2 class="font-monospace mt-4">my service</h2>
+          <div class="container">
+            <div class="row row-cols-2">
+              <div class="col card bg-transparent mt-2">
+                <i class="bi bi-display fs-2 text-success"></i>
+                <h4 class="fs-5 mt-3">development</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis minima fugiat nihil iure dolorem laboriosam!</p>
+                <button class="btn btn-outline-success mb-3 btn-sm">more...</button>
+              </div>
+              <div class="col card bg-transparent mt-2">
+                <i class="bi bi-display fs-2 text-success"></i>
+                <h4 class="fs-5 mt-3">data base</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis minima fugiat nihil iure dolorem laboriosam!</p>
+                <button class="btn btn-outline-success mb-3 btn-sm">more...</button>
+              </div>
+              <div class="col card bg-transparent mt-2">
+                <i class="bi bi-display fs-2 text-success"></i>
+                <h4 class="fs-5 mt-3">data security</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis minima fugiat nihil iure dolorem laboriosam!</p>
+                <button class="btn btn-outline-success mb-3 btn-sm">more...</button>
+              </div>
+              <div class="col card bg-transparent mt-2">
+                <i class="bi bi-display fs-2 text-success"></i>
+                <h4 class="fs-5 mt-3">SEO</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis minima fugiat nihil iure dolorem laboriosam!</p>
+                <button class="btn btn-outline-success mb-3 btn-sm">more...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- contact -->
+      <div class="row mb-4">
+        <h2 class="font-monospace mt-4">contact</h2>
+        <ul class="list-unstyled d-flex justify-content-evenly text-light">
+          <li><a href="mailto:jcebula@gmail.com" class="text-decoration-none fst-normal"><i class="bi bi-envelope text-light"> jcebula@gmail.com</i></a></li>
+          <li><a href="https://www.google.pl/maps/place/Pusta+10,+41-205+Sosnowiec/@50.2874771,19.1217513,17z/data=!3m1!4b1!4m5!3m4!1s0x4716da9e5ed4a261:0xfeb5ba5ca6614ff8!8m2!3d50.2874737!4d19.12394" class="text-decoration-none text-light"><i class="bi bi-geo-alt text-light"></i> ul. Pusta 10, Sosnowiec</a></li>
+          <li><a href="tel:+48600600600" class="text-decoration-none text-light"><i class="bi bi-phone text-light"></i> +48 600 600 600</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="position-fixed bottom-0 bg-success text-center w-100">&copy; 2022 - Janusz Cebula Lmd</footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
